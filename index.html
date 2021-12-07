@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="wrapper"> 
-    <audio src="./PerdeuPlayba.mp3" autoplay loop></audio>
+    <audio id="audio" src="./PerdeuPlayba.mp3" autoplay></audio>
     <div>Aaaaiii que gatooo!!</div> 
     <div>Adeus amiguinho</div> 
     <div>Nós de te amamos</div> 
@@ -35,5 +35,13 @@
     <img src="IMG_9671.jpg" alt="Nossa equipe">
     <br>
     <div>Produced by Gui Rocha</div>
+    <script>
+        const audio = document.getElementById('audio');
+    
+        document.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
 </body>
+
 </html>
